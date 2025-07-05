@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfólio - Meus Trabalhos</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Sobre Mim</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portfolio.html" class="active">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content" id="portfolio">
+        <h1>Portfólio</h1>
+        <p>Aqui estão alguns projetos que desenvolvi durante meus estudos e trabalhos:</p>
+        <ul>
+            <li><a href="https://docs.google.com/presentation/d/1U3xsaq6LnztXL_jk1s7vLnri8fmOCieKWHeNUiTzp7I/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Projeto 1 - Criação de um Restaurante Vegano</a></li>
+            <li><a href="https://exemplo2.com" target="_blank" rel="noopener noreferrer">Projeto 2 - </a></li>
+            <li><a href="https://exemplo3.com" target="_blank" rel="noopener noreferrer">Projeto 3 -</a></li>
+            <li><a href="https://github.com/seuusuario" target="_blank" rel="noopener noreferrer">Meu GitHub</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const port = document.getElementById('portfolio');
+        port.addEventListener('mouseenter', () => {
+            port.style.color = '#00ffff';
+            port.style.transform = 'scale(1.03)';
+            port.style.transition = 'all 0.3s ease';
+            port.style.textShadow = '0 0 10px #00ffff';
+        });
+        port.addEventListener('mouseleave', () => {
+            port.style.color = '#ccc';
+            port.style.transform = 'scale(1)';
+            port.style.textShadow = 'none';
+        });
+    </script>
+</body>
+</html>

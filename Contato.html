@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio - Contato</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Sobre Mim</a></li>
+      <li><a href="formacao.html">Formação</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
+      <li><a href="contato.html" class="active">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-content" id="contato">
+    <h1>Contato</h1>
+
+    <div class="contato-info">
+      <h2>Meus Contatos</h2>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:emimendes98@gmail.com?subject=Contato%20Portfólio">emimendes98@gmail.com</a>
+      </p>
+      <p>
+        <strong>WhatsApp:</strong>
+        <a href="https://wa.me/5584991955713?text=Olá%20Emiliane!%20Vi%20seu%20portfólio%20online%20e%20gostaria%20de%20conversar!" target="_blank" rel="noopener noreferrer">
+          (84) 99195-5713
+        </a>
+      </p>
+    </div>
+
+    <div class="contato-form">
+      <h2>Envie uma Mensagem</h2>
+      <form action="#" method="post" onsubmit="alert('Formulário enviado!'); return false;">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const cont = document.getElementById('contato');
+    cont.addEventListener('mouseenter', () => {
+      cont.style.color = '#00ffff';
+      cont.style.transform = 'scale(1.03)';
+      cont.style.transition = 'all 0.3s ease';
+      cont.style.textShadow = '0 0 10px #00ffff';
+    });
+    cont.addEventListener('mouseleave', () => {
+      cont.style.color = '#ccc';
+      cont.style.transform = 'scale(1)';
+      cont.style.textShadow = 'none';
+    });
+  </script>
+</body>
+</html>
+
+

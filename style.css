@@ -1,0 +1,204 @@
+/* Fonte moderna do Google Fonts - 'Orbitron' para estilo gamer */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    background-color: #0a0a0a; /* fundo preto quase total */
+    color: #ccc;
+}
+
+/* Menu fixo com efeito neon */
+nav {
+    background-color: #111;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow:
+        0 0 10px #00f0ff,
+        0 0 20px #00f0ff,
+        0 0 30px #00f0ff;
+    z-index: 1000;
+}
+
+/* Lista horizontal do menu */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+/* Itens do menu */
+nav ul li {
+    position: relative;
+}
+
+/* Links do menu com efeito neon e transição */
+nav ul li a {
+    color: #00f0ff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 5px 0;
+    display: inline-block;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Neon glow no hover do menu */
+nav ul li a:hover, nav ul li a:focus {
+    color: #00ffff;
+    text-shadow:
+        0 0 5px #00ffff,
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 30px #00ffff;
+}
+
+/* Underline animado no menu ao passar mouse */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #00ffff;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Espaço para o conteúdo não ficar atrás do menu */
+.main-content {
+    padding: 100px 30px 40px 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #121212;
+    border-radius: 12px;
+    box-shadow:
+        0 0 20px rgba(0, 255, 255, 0.3),
+        inset 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+/* Títulos com efeito neon */
+h1 {
+    color: #00ffff;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow:
+        0 0 5px #00ffff,
+        0 0 10px #00ffff,
+        0 0 20px #00ffff;
+}
+
+/* Parágrafos com espaçamento */
+p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* Efeito interativo nas seções principais - eleva e brilho ao passar o mouse */
+.main-content:hover {
+    box-shadow:
+        0 0 30px #00ffff,
+        inset 0 0 20px #00ffff;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+/* Lista estilizada com hover gamer */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    cursor: default;
+    transition: color 0.3s ease;
+}
+
+/* Bullet personalizado estilo neon */
+ul li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: #00ffff;
+    text-shadow: 0 0 8px #00ffff;
+    font-weight: bold;
+}
+
+/* Mudança de cor e brilho no hover das li */
+ul li:hover {
+    color: #00ffff;
+    text-shadow:
+        0 0 5px #00ffff,
+        0 0 10px #00ffff;
+}
+
+/* Formulário estilizado */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+
+label {
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff;
+}
+
+input, textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #00ffff;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: #0a0a0a;
+    color: #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Glow azul ao focar input/textarea */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #00ffff;
+    box-shadow:
+        0 0 8px #00ffff,
+        0 0 20px #00ffff;
+}
+
+/* Botão com efeito neon */
+button {
+    width: 150px;
+    background-color: #00ffff;
+    color: #000;
+    border: none;
+    padding: 14px;
+    font-size: 1.2em;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow:
+        0 0 8px #00ffff,
+        0 0 20px #00ffff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #00cccc;
+    box-shadow:
+        0 0 15px #00cccc,
+        0 0 30px #00cccc;
+}

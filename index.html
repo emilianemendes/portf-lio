@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfólio - Sobre Mim</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Sobre Mim</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content" id="sobre-mim">
+        <h1>Sobre Mim</h1>
+        <p>Olá! Meu nome é <strong>Emiliane Mendes Soares</strong>.Sou apaixonada por tecnologia, games, música e animes. Tenho formação em Psicologia e estou em transição de carreira, buscando me desenvolver cada vez mais na área de TI.
+
+Essa paixão por tecnologia me motiva a aprender constantemente e a explorar novas possibilidades para crescer profissionalmente. Neste portfólio, compartilho meus projetos e habilidades, resultado dessa jornada de transformação.
+
+Obrigada por visitar e acompanhar meu caminho!
+
+    <script>
+        // Interação extra no conteúdo "Sobre Mim"
+        const sobre = document.getElementById('sobre-mim');
+        sobre.addEventListener('mouseenter', () => {
+            sobre.style.color = '#00ffff';
+            sobre.style.transform = 'scale(1.03)';
+            sobre.style.transition = 'all 0.3s ease';
+            sobre.style.textShadow = '0 0 10px #00ffff';
+        });
+        sobre.addEventListener('mouseleave', () => {
+            sobre.style.color = '#ccc';
+            sobre.style.transform = 'scale(1)';
+            sobre.style.textShadow = 'none';
+        });
+    </script>
+</body>
+</html>

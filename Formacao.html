@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfólio - Formação</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Sobre Mim</a></li>
+            <li><a href="formacao.html" class="active">Formação</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content" id="formacao">
+        <h1>Formação Educacional e Idiomas</h1>
+        <h2>Educação</h2>
+        <ul>
+            <li>Bacharel em Psicologia - Universidade Potiguar (UNP) (2017-2021)</li>
+            <li>Curso Técnico em Análise e Desenvolvimento de Sistemas - UNINTER (2024-2027)</li>
+        </ul>
+
+        <h2>Idiomas</h2>
+        <ul>
+            <li>Português - Nativo</li>
+            <li>Inglês - Básico</li>
+            
+        </ul>
+    </div>
+
+    <script>
+        const formacao = document.getElementById('formacao');
+        formacao.addEventListener('mouseenter', () => {
+            formacao.style.color = '#00ffff';
+            formacao.style.transform = 'scale(1.03)';
+            formacao.style.transition = 'all 0.3s ease';
+            formacao.style.textShadow = '0 0 10px #00ffff';
+        });
+        formacao.addEventListener('mouseleave', () => {
+            formacao.style.color = '#ccc';
+            formacao.style.transform = 'scale(1)';
+            formacao.style.textShadow = 'none';
+        });
+    </script>
+</body>
+</html>
